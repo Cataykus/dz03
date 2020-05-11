@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class Signaling : MonoBehaviour
 {
     private AudioSource _audioSource;
+
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
